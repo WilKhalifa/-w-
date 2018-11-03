@@ -12,7 +12,6 @@
   .menu-principal ul {
     flex-wrap: wrap;
   }
-}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -23,3 +22,48 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   /* Styles */
 }
+
+.menu-principal {
+  width: 100%;
+}
+
+.container-principal {
+  width: 100%;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+
+.promo-ctn {
+  width: 100%;
+}
+
+.footer-ctn {
+  width: 100%;
+}
+
+/*-------------NAV--------------*/
+
+.menu-principal ul li {
+    padding: 18px 8px;
+    font-size: 11px;
+}
+
+.menu-principal ul {
+    height: 65px;
+}
+
+.container2 .fleximg .image-ctn2 img{
+  display: none;
+}
+
+/*----------------HEADER--------------*/
+
+
+
+/*--------------CONCEPT---------------*/
+
+
+
+/*--------COMMENT CA MARCHE-------*/

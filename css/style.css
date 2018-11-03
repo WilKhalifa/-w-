@@ -18,12 +18,12 @@ body {
 
 ::-moz-selection {
   color: white;
-  background: #9A7197;
+  background: #553B32;
 }
 
 ::selection {
   color: white;
-  background: #9A7197;
+  background: #553B32;
 }
 
 .menu-principal {
@@ -37,9 +37,10 @@ body {
 
 .container-principal {
   width: 1170px;
-  padding: 0 90px;
+  padding: 0 15px;
   margin: auto;
 }
+
 
 /* ------MENU PRINCIPAL------ */
 
@@ -71,7 +72,8 @@ body {
 /* ------HEADER------ */
 
 .home-header {
-  height: 650px;
+  height: 750px;
+  width: 100%;
   background-color: green;
   background-image: url('../img/header1.jpg');
   background-size: cover;
@@ -86,8 +88,8 @@ body {
 
 h1 {
   color: white;
-  margin-top: 200px;
-  margin-left: 20px;
+  margin-top: 66px;
+  margin-left: 60px;
   font-size: 96px;
   width: 538px;
   }
@@ -98,13 +100,54 @@ h1 {
     padding: 8px 10px;
   }
 
+  /*Button */
+  .butn {
+    width: 65%;
+    border: 0;
+    outline: 0;
+    background-image: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    line-height: 1.6;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    transition: 0.2s;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    box-sizing: border-box;
+  }
+  .butn.butn-header {
+    min-width: 230px;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 18px 50px;
+  }
+  .butn.butn-header:hover {
+    background-color: #212121
+    color: #fff;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.18), 0 10px 40px 0 rgba(0, 0, 0, 0.15);
+  }
+  .butn.butn-header:active {
+    box-shadow: none;
+    -webkit-transform: scale(0.98, 0.98);
+            transform: scale(0.98, 0.98);
+  }
+
+  /*Buttons END */
+
 /*--------------COMMENTCAMARCHE----------*/
 
 .container{
   padding: 30px;
   display: flex;
   background-color: white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
   flex-direction: column;
   align-items: center;
 }
@@ -133,7 +176,11 @@ h1 {
 
 
 .advantages-ctn svg, .advantages-ctn img {
-  height: 85px;
+  height: 140px;
+}
+
+.advantages-ctn svg {
+  fill : #b0ff57;
 }
 
 .advantages-ctn div article {
@@ -181,12 +228,10 @@ h1 {
 /*---------Produits---------*/
 
 .produits-ctn{
-  padding: 15px;
   margin-top: 30px;
   display: flex;
   background-color: white;
   justify-content: space-around;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .products-row {
@@ -243,6 +288,7 @@ h1 {
 .product p {
   text-align: center;
   font-size: 16px;
+  margin-top: 20px;
 }
 
 .product-body .prix {
@@ -275,7 +321,7 @@ display: none;
 .shiny-btn {
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px;
@@ -299,6 +345,8 @@ display: none;
 }
 
 .product footer svg {
+  fill : white;
+  margin-right: 5px;
 }
 
 .product footer .cart1-svg {
@@ -310,23 +358,12 @@ display: none;
   transition: 0.5s;
 }
 
-.product footer #shiny-btn1 {
-  margin-top: 41px;
-}
-
-.product footer #shiny-btn3 {
-  margin-top: 61px;
-}
-.product footer #shiny-btn2 {
-  padding: 18px;
-  margin-top: 23px;
-}
-
 
 /*--------Bandeau promo--------*/
 
 .promo-ctn {
   height: 250px;
+  width: 100%;
   background-color: green;
   background-image: url('../img/gift.jpg');
   background-size: cover;
@@ -416,20 +453,51 @@ display: none;
 
 .footer-ctn{
   padding: 30px;
-  display: flex;
   background-color: #212121;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  flex-direction: row;
-  justify-content: space-between;
+}
+
+.menu-footer {
+}
+
+.top-Footer {
+  display: flex;
+}
+
+.resume-footer {
+  color: white;
+  text-align: center;
+  width: 25%;
+}
+
+.menu-footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-ctn #nouveau-msg {
   resize: none;
-  width: 60%;
+  width: 40%;
+}
+
+.form-ctn {
+flex: 1;
+text-align: center;
+margin-right: 124px;
 }
 
 .form-ctn p label, legend {
   color: white;
+}
+
+#form-btn {
+  border-radius: 9px;
+  padding: 15px 36px;
+  background-color: #005bbb;
+  border: 1px solid #005bbb;
+}
+
+.form-ctn input, textarea {
+  border-radius: 6px
 }
 
 .social-share {
@@ -440,11 +508,11 @@ display: none;
 .social {
   text-decoration: none;
   color: #333333;
-  font-size: 3rem;
+  font-size: 2rem;
   display: inline-block;
-  width: 4.5rem;
-  height: 4.5rem;
-  line-height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
   position: relative;
 }
 .social + .social {
@@ -488,12 +556,24 @@ display: none;
   background-color: #dd4b39;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  height: 64vh;
-}
-
 .screen-reader-text {
   display: none;
+}
+
+.bot-footer {
+  display: flex;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.cgv-ctn {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  flex: 2;
+}
+
+.cgv-ctn a {
+  color: white;
+  text-decoration: none;
 }
